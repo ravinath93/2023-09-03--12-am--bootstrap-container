@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">  
+  <title>Rasra</title>
+  
+  
+  <style>
+
+    /* section වලට උඩින් යටින් padding එකක් දැම්ම */
+    section{
+      padding: 60px 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  
+   <!-- section > Intro text  & main image  -->
+   <section id="intro">
+
+    <!-- container-lg වලට පහල container size 100%,  ඉහල size වලට ඒ ඒ size වල max -width සෙට් වෙනවා... -->
+    <div class="container-lg">
+
+      <!-- row > row එක ඇතුලේ තියෙන ඔක්කොම center වෙනවා ustify-content-center වලින් -->
+      <!-- row එක ඇතුලේ තියෙන ඔක්කොම container box වලට vertically center කිරීමට align-items-center use කරන්න පුළුවන් row එකටම , නැත්නම් container box වලට my-auto දාන්නත් පුළුවන්.. -->
+      <div class="row justify-content-center ">
+
+          <!-- Intro text -->
+         
+          <!-- *col-md-5 > කියන්නේ col-md සිට ඉහළ size වලට , 12 න් 5ක් ගන්න කියල... col-md වලට පහල size වලට 12 ගන්න කියල මේ කියවෙන්නේ ... -->
+          <!-- ** text-center > කියන්නේ සියලු col size වලට , text එක තිරස්ව center වෙන්න කියල ... -->
+          <!-- *** text-md-start > කියන්නේ md (768px) සිට ඉහල size වලට text left එකට aligin කරන්න කියල -->
+          <!-- **** my-auto කියන්නේ margin y අක්ෂයට (සිරස්) සිරස්ව center කරන්න කියල  -->
+        <div class="col-md-5 text-center text-md-start my-auto">
+          <h1>
+            <!-- *display-1 text-muted  lead > කියන්නේ font styles දෙකක්  -->
+            <div class="display-1">Black Belt</div>
+            <div class="display-5 text-muted">Your Coding Skill</div>
+          </h1>
+
+          <p class="lead m-1 text-muted"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+
+          <a class="btn btn-primary btn-lg" href="#">Buy Now</a>
+        </div>
+
+          <!--  main image  -->
+          <!-- *d-none > කියන්නේ display කරන්න එපා කියල .. -->
+          <!-- **d-md-block > කියන්නේ md size එකේ සිට ඉහලට display කරන්න  කියල .. -->
+          <div class="col-md-5 text-center d-none d-md-block my-auto">
+            <!-- *img-fluid > කියන්නේ image එක දාපු ගමන් එකේ size තමයි ගන්නේ ... මේ class එකෙන් width 100% සහ height auto කරලා responsive වෙලා එනවා.. -->
+            <img class="img-fluid" src="assets\ebook-cover.png" alt="ebook img">
+            <p>This is Image</p>
+          </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html> 
